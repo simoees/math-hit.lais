@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math-Hit | Paródias e Macetes para Estudos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO / ÁREA DO ALUNO -->
+  <header>
+    <div class="logo">
+      <h1>🎵 Math-Hit</h1>
+      <p>Aprenda cantando e grave qualquer fórmula!</p>
+    </div>
+
+    <div class="perfil-aluno">
+      <div class="avatar" id="avatar-icone">🎓</div>
+      <div class="info-user">
+        <input type="text" id="nome-aluno" placeholder="Seu Nome" value="Estudante">
+        <span class="nivel" id="nivel-aluno">Nível: Iniciante 🚀</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- SELEÇÃO DE MATÉRIAS -->
+    <section class="secao-materias">
+      <h2>Escolha uma Matéria</h2>
+      <div class="grid-materias">
+        <button class="btn-materia active" onclick="carregarMateria('matematica')">📐 Matemática</button>
+        <button class="btn-materia" onclick="carregarMateria('fisica')">⚡ Física</button>
+        <button class="btn-materia" onclick="carregarMateria('quimica')">🧪 Química</button>
+        <button class="btn-materia" onclick="carregarMateria('biologia')">🧬 Biologia</button>
+        <button class="btn-materia" onclick="carregarMateria('portugues')">📚 Português</button>
+      </div>
+    </section>
+
+    <!-- LISTA DE PARÓDIAS E MACETES -->
+    <section class="secao-conteudo">
+      <h2 id="titulo-materia">Paródias de Matemática</h2>
+      <div id="lista-parodias" class="grid-cards">
+        <!-- O conteúdo será gerado dinamicamente via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Math-Hit © 2026 — Seu site de paródias e macetes para o ENEM e Vestibulares.</p>
+  </footer>
+
+  <script src="parodias.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
